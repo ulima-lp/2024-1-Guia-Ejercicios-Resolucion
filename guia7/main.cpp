@@ -1,13 +1,11 @@
 #include <iostream>
-#include "p3.h"
+#include "p6.h"
 
 int main()
 {
-    int numero = -10;
-
-    std::cout << "Es positivo: " 
-        << verSiEsPositivo(&numero)
-        << std::endl;
+    int* arregloGenerado = generarArreglo(5);
+    imprimirArreglo(arregloGenerado, 5);
+    imprimirArregloRetroceso(arregloGenerado, 5);
 
     return 0;
 }
