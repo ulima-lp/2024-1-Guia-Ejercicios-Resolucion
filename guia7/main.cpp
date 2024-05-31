@@ -1,18 +1,13 @@
 #include <iostream>
-#include "p1.h"
+#include "p3.h"
 
 int main()
 {
-    int numero1 = 30;
-    int numero2 = 40;
+    int numero = -10;
 
-    std::cout << numero1 << std::endl;
-    std::cout << numero2 << std::endl;
-
-    intercambiarValores(&numero1, &numero2);
-
-    std::cout << numero1 << std::endl;
-    std::cout << numero2 << std::endl;
+    std::cout << "Es positivo: " 
+        << verSiEsPositivo(&numero)
+        << std::endl;
 
     return 0;
 }
