@@ -1,12 +1,14 @@
 #include <iostream>
-#include "p6.h"
+#include "p10.h"
 
 int main()
 {
-    int* arregloGenerado = generarArreglo(5);
-    imprimirArreglo(arregloGenerado, 5);
-    imprimirArregloRetroceso(arregloGenerado, 5);
-    arregloGenerado = agregarNumero(arregloGenerado, 5, 30);
-    imprimirArreglo(arregloGenerado, 6);
+    int num1 = 3;
+    int num2 = 21;
+    int respuesta = 0;
+    operar(num1, num2, &respuesta);
+
+    std::cout << respuesta;
+
     return 0;
 }
