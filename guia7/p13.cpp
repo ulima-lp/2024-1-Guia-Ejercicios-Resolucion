@@ -14,9 +14,20 @@ int* inputArreglo(int tam)
 
     return arreglo;
 }
-int* generateArreglo(int m)
+int* generateArreglo(int tam)
 {
+    srand(time(NULL)); // Inicializamos la semilla
 
+    int* arreglo = new int[tam];
+
+    for (size_t i=0; i< tam; i++)
+    {
+        int num = rand() % 10;
+
+        arreglo[i] = num;
+    }
+
+    return arreglo;
 }
 void printArreglo(int* arreglo, int m)
 {
