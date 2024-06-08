@@ -113,7 +113,7 @@ void ImprimirReporte(
         intercambiar = false;
         for (j = 0; j < tamArregloProductos - i - 1; j++)
         {
-            if (arregloProductos[j] > arregloProductos[j+1])
+            if (arregloProductos[j].precio > arregloProductos[j+1].precio)
             {
                 Producto temp;
                 temp.nombre = arregloProductos[j].nombre;
