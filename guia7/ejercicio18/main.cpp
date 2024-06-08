@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include "p18.cpp"
+#include "p18.h"
 
 /*
 Programar un juego de búsqueda del tesoro, donde:
@@ -34,7 +34,7 @@ int main()
     
     int contadorIntentos = 0;
 
-    for (int i=0; i < contadorIntentos; i++)
+    for (int i=0; i < 3; i++)
     {
         int posx, posy;
         std::cout << "Ingresa Posicion X: ";

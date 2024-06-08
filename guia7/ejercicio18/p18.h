@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 
 char* InicializarTablero(int m, int n);

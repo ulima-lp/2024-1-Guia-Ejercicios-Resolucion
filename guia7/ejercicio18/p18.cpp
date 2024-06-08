@@ -2,8 +2,8 @@
 
 char* InicializarTablero(int m, int n)
 {
-    char* tablero = new char[m * n];
     int tam = n*m;
+    char* tablero = new char[tam];
 
     for (size_t i = 0; i < tam; i++)
     {
