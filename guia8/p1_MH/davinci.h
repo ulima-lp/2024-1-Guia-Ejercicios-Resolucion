@@ -18,5 +18,6 @@ public:
 
     Frase();
     void AgregarLetra(size_t num, std::string caracter);
+    void SetearCaracter(std::string car, size_t pos);
     void PrintDebug();
 };

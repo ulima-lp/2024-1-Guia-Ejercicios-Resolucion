@@ -16,6 +16,18 @@ int main()
 		fraseCodificada.AgregarLetra(num, "");
 	}
 
+	// Leer cadena codificada y luego pasarla
+	// a nuestra frase creada
+	std::string cadCodificada = "";
+	std::cin >> cadCodificada;
+
+	for (size_t i=0; i < cantidad; i++)
+	{
+		std::string caracter(1, cadCodificada[i]);
+		fraseCodificada.SetearCaracter(caracter, i);
+	}
+
+
 	fraseCodificada.PrintDebug();
 
 	return 0;

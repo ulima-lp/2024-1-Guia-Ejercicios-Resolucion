@@ -30,6 +30,21 @@ void Frase::AgregarLetra(size_t num, std::string caracter)
     longitud++;
 }
 
+void Frase::SetearCaracter(std::string car, size_t pos)
+{
+    Letra* pPivot = primer;
+    size_t cont = 0;
+    while (pPivot != nullptr)
+    {
+        if (cont == pos)
+        {
+            pPivot->caracter = car;
+        }
+        pPivot = pPivot->siguiente;
+        cont++;
+    }
+}
+
 void Frase::PrintDebug()
 {
     Letra* pPivot = primer;
