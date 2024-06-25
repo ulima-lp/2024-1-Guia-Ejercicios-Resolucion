@@ -27,7 +27,8 @@ int main()
 		fraseCodificada.SetearCaracter(caracter, i);
 	}
 
-
+	fraseCodificada.PrintDebug();
+	fraseCodificada.Ordenar();
 	fraseCodificada.PrintDebug();
 
 	return 0;

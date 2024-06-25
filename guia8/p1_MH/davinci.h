@@ -19,5 +19,10 @@ public:
     Frase();
     void AgregarLetra(size_t num, std::string caracter);
     void SetearCaracter(std::string car, size_t pos);
+    void Ordenar();
+    Letra* ObtenerLetra(size_t pos);
+    void IntercambiarLetras(size_t p1, size_t p2);
+    Letra* Sacar(size_t pos);
+    void Insertar(Letra* letra, size_t pos);
     void PrintDebug();
 };
