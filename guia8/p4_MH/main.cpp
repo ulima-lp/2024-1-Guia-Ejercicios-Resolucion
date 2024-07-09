@@ -25,5 +25,9 @@ int main()
         Sexo::Masculino
     );
     lista.ImprimirContactos();
+
+    Contacto* c1 = lista.ObtenerContacto("Rocio");
+    std::cout << c1->email << std::endl;
+
     return 0;
 }

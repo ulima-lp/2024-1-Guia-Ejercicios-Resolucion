@@ -40,4 +40,7 @@ public:
         Sexo sexo
     );
     void ImprimirContactos();
+    Contacto* ObtenerContacto(
+        const std::string& nombre
+    );
 };

@@ -55,3 +55,18 @@ void ListaContactos::ImprimirContactos()
         pPivot = pPivot->siguiente;
     }
 }
+
+Contacto *ListaContactos::ObtenerContacto(
+    const std::string &nombre)
+{
+    Contacto* pPivot = primer;
+    while (pPivot != nullptr)
+    {
+        if (pPivot->nombre == nombre)
+        {
+            return pPivot;
+        }
+        pPivot = pPivot->siguiente;
+    }
+    return nullptr;
+}
