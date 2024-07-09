@@ -43,4 +43,7 @@ public:
     Contacto* ObtenerContacto(
         const std::string& nombre
     );
+    void EliminarContacto(
+        const std::string& nombre
+    );
 };

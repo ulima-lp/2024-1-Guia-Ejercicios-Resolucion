@@ -70,3 +70,50 @@ Contacto *ListaContactos::ObtenerContacto(
     }
     return nullptr;
 }
+
+void ListaContactos::EliminarContacto(
+    const std::string &nombre)
+{
+    Contacto* pPivot = primer;
+    Contacto* pAnterior = nullptr;
+    bool eliminado = false;
+
+    while (pPivot != nullptr)
+    {
+        if (pPivot->nombre == nombre)
+        {
+            // Eliminar contacto
+            if (pAnterior == nullptr)
+            {
+                // Eliminar el primer elemento
+                primer = pPivot->siguiente;
+                if (primer->siguiente == nullptr)
+                {
+                    ultimo = primer;
+                }
+            }else
+            {
+                pAnterior->siguiente = pPivot->siguiente;
+                if (pPivot->siguiente == nullptr)
+                {
+                    ultimo = pAnterior;
+                }
+            }
+            
+            Contacto* temp = pPivot->siguiente;
+            delete pPivot;
+            pPivot = temp;
+            eliminado = true;
+            tam--;
+        }
+
+        if (!eliminado)
+        {
+            pAnterior = pPivot;
+            pPivot = pPivot->siguiente;
+        }else
+        {
+            eliminado = false;
+        }
+    }
+}
